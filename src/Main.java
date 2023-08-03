@@ -11,8 +11,10 @@ public class Main {
 
         Worker[] workers = {d1, w1, w2, w3, w4, w5};
 
-        for (int i = 0; i < workers.length; i++) {
-            salaryIncrease(workers[i], 5000);
+        if (!(d1 instanceof Worker)) {
+            for (int i = 0; i < workers.length; i++) {
+                salaryIncrease(workers[i], 5000);
+            }
         }
 
         for (int i = 0; i < workers.length; i++) {
